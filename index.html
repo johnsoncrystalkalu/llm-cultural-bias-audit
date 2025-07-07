@@ -53,7 +53,7 @@
 
       <p><strong>How it works:</strong> The app sends a prompt to the LLM, receives the reply, and scans it for region-specific keywords like <code>kenya</code>, <code>gandhi</code>, <code>brazil</code>, or <code>plato</code>. It then charts how many times each region is referenced.</p>
 
-      <p><strong>Limitations:</strong> This tool uses keyword matching only. It may miss indirect bias, and doesn't analyze context or tone. For deeper analysis, name/entity detection and sentiment analysis would be useful.</p>
+      <p><strong>Limitations:</strong> This tool uses keyword matching only. It may miss indirect bias, and doesn't analyze context or tone. For deeper analysis, name/entity detection and sentiment analysis would be useful. Also, the system does not log responses or save audit results to a database, limiting its use for long-term analysis, large-scale evaluations, or trend monitoring.</p>
 
       <p class="text-xs text-gray-500">Built by Johnson Crystal Kalu for research: <em>Bias and Fairness Auditing of LLMs for Educational Use in Developing Countries</em>. View source or get help at <a href="https://johnsoncrystalkalu.com" class="text-blue-600 underline">johnsoncrystalkalu.com</a></p>
 
@@ -61,14 +61,10 @@
   </details>
 </div>
 
-<!-- 
-    <footer class="mt-12 text-center text-xs text-gray-500">
-      Powered by Together AI · Demo for Educational Fairness Research
-    </footer> -->
   </div>
 
   <script>
-    const TOGETHER_API_KEY = 'Enter_Api_key';
+    const TOGETHER_API_KEY = 'ENTER_API_KEY';
     const TOGETHER_MODEL = 'meta-llama/Llama-3.3-70B-Instruct-Turbo-Free';
 
     const cultureTags = {
